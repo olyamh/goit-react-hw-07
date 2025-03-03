@@ -1,0 +1,61 @@
+.wrapper{
+    max-width: 350px;
+    min-height: 100px;
+    background-color: beige;
+    border: 1px solid pink;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.namePhone{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    padding: 2px;
+}
+.span{
+    margin: 5px;
+}
+.text{
+    display: flex;
+    flex-direction: row;
+   align-items: baseline;
+    
+    
+}
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    max-height: 33px;
+    border: 1px solid palevioletred;
+background-color: rgb(238, 204, 170);
+color: white;
+    padding: 12px ;
+    
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color color border .3s, transform .2s;
+}
+
+.button:hover,
+.button:focus{
+    background-color: rgb(219, 74, 45);
+color: rgb(29, 27, 27);
+border: 1px solid rgb(227, 43, 43);
+}
