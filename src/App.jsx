@@ -26,7 +26,8 @@ function App() {
       <h1>Phonebook</h1>
       <ContactForm />
       {contacts.length > 1 && <SearchBox />}     
-       {contacts.length ===0 && !error ? <Notification /> :<></> }
+       {contacts.length ===0 && !loading && !error ? <Notification /> :<></> }
+       
       
       {loading ? <p>Loading...</p> : <ContactList contacts={contacts} />}
       {error && <p>Sorry, somethig went wrong. Pease try later</p>}
