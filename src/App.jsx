@@ -29,7 +29,7 @@ function App() {
        {contacts.length ===0 && !loading && !error ? <Notification /> :<></> }
        
       
-      {loading ? <p>Loading...</p> : <ContactList contacts={contacts} />}
+      {loading ? <p>Loading...</p> : <ContactList />}
       {error && <p>Sorry, somethig went wrong. Pease try later</p>}
     </div>
   );
